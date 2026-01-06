@@ -15,13 +15,10 @@ public class BetterEntityTooltipModSystem : ModSystem
     {
         base.StartPre(api);
 
-        if (api.Side == EnumAppSide.Server)
+        if (!Harmony.HasAnyPatches(patchId))
         {
-            if (!Harmony.HasAnyPatches(patchId))
-            {
-                harmonyInstance = new Harmony(patchId);
-                harmonyInstance.PatchAll();
-            }
+            harmonyInstance = new Harmony(patchId);
+            harmonyInstance.PatchAll();
         }
     }
 

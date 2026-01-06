@@ -7,8 +7,9 @@
         "cooli2"
     ],
     "description": "Adds more info to the entity tooltip, mostly related to husbandry",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "game": "1.21.0"
-    }
+    },
+    "side": "Universal"
 }
